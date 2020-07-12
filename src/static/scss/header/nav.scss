@@ -1,0 +1,19 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  & > * {
+    &:not(:last-child) { margin-right: 48px; }
+  }
+}
+
+.nav__link {
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  &--order {
+    text-transform: none;
+  }
+}

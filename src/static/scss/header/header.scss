@@ -1,0 +1,13 @@
+@import "logo";
+@import "nav";
+
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.header__nav {
+  margin-left: auto;
+}

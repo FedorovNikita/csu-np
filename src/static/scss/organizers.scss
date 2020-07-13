@@ -1,0 +1,52 @@
+.organizers__title {
+  margin-bottom: 60px;
+}
+
+.organizers__wrap {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 115px;
+}
+
+.organizers__curator {
+  display: flex;
+  width: 300px;
+  & > * {
+    &:not(:last-child) { margin-right: 33px; }
+  }
+}
+
+.curator__photo {
+  width: 118px;
+  height: 123px;
+  background-color: #666666;
+  border-radius: 10px;
+}
+
+.curator__name {
+  font-family: $bold-font;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.curator__about {
+  margin: 15px 0 0 0;
+  font-family: $medium-font;
+  color: $text-grey;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.organizers__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  & > * {
+    &:not(:last-child) { margin-right: 95px; }
+  }
+}

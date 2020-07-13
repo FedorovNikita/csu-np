@@ -1,0 +1,27 @@
+.calendar__title {
+  margin-bottom: 110px;
+}
+
+.calendar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.calendar__date {
+  font-size: 40px;
+  color: $text-grey;
+}
+
+.calendar__text {
+  font-family: $bold-font;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+}

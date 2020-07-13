@@ -1,0 +1,24 @@
+.stages__title {
+  margin-bottom: 60px;
+}
+
+.stages__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stages__item {
+  width: calc(100% / 3);
+}
+
+.stages__number {
+  font-size: 48px;
+  color: $text-grey;
+}
+
+.stages__text {
+  font-size: 26px;
+  line-height: 32px;
+}

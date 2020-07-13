@@ -4,14 +4,15 @@
 
 .primary__title {
   margin: 0;
-  font-family: $bold-font;
-  font-size: 124px;
-  line-height: 170px;
+  font-family: $ubuntu-font-bold;
+  font-size: 125px;
+  line-height: 160px;
 }
 
 .title {
   margin: 0;
   font-size: 25px;
+  line-height: 29px;
   color: $text-grey;
   text-transform: uppercase;
 }
@@ -19,4 +20,5 @@
 .waiting__text {
   font-size: 62px;
   line-height: 75px;
+  margin: 75px 0;
 }

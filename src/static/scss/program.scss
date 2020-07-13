@@ -1,37 +1,37 @@
 .program__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 90px 0 0 0;
+  margin: 70px 0 0 0;
   padding: 0;
   list-style: none;
 }
 
 .program__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 50%;
-  padding-right: 65px;
-  padding-bottom: 80px;
-  padding-left: 100px;
+  padding: 0 60px 80px 90px;
 }
 
 .program__number {
   position: absolute;
   left: 0;
-  font-size: 48px;
+  font-size: 46px;
+  line-height: 53px;
   color: $text-grey;
 }
 
 .program__title {
   margin: 0 0 40px 0;
-  font-size: 48px;
-  line-height: 55px;
+  font-family: $ubuntu-font-bold;
+  font-size: 50px;
+  line-height: 57px;
+  &--line {
+    margin-bottom: 97px;
+  }
 }
 
 .program__text {
   margin: 0;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 30px;
 }

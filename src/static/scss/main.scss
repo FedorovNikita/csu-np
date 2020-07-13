@@ -16,6 +16,8 @@ $text-grey: #666666;
 // $main-font: 'source_sans_proregular', Arial, sans-serif;
 $medium-font: 'montserratmedium', Arial, sans-serif;
 $bold-font: 'montserratbold', Arial, sans-serif;
+$ubuntu-font: 'ubuntu', Arial, sans-serif;
+$ubuntu-font-bold: 'ubuntubold', Arial, sans-serif;
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -39,7 +41,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: $medium-font;
+  font-family: $ubuntu-font;
   background-color: #000000;
   color: #ffffff;
 }
@@ -72,3 +74,6 @@ a {
 @import "stages";
 @import "calendar";
 
+// & > * {
+//   &:not(:last-child) { margin-right: 10px; }
+// }

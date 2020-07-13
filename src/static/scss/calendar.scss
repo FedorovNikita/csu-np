@@ -1,5 +1,5 @@
 .calendar__title {
-  margin-bottom: 110px;
+  margin-bottom: 90px;
 }
 
 .calendar__list {
@@ -10,18 +10,26 @@
 
 .calendar__item {
   display: flex;
-  justify-content: space-between;
-  padding: 0 50px;
+  align-items: flex-start;
+  margin-bottom: 120px;
+  & > * {
+    &:not(:last-child) { margin-right: 68px; }
+  }
 }
 
 .calendar__date {
-  font-size: 40px;
+  min-width: 175px;
+  margin-top: 10px;
+  font-size: 46px;
+  line-height: 53px;
   color: $text-grey;
+  text-align: right;
 }
 
 .calendar__text {
-  font-family: $bold-font;
-  font-size: 40px;
-  line-height: 48px;
+  font-family: $ubuntu-font-bold;
+  font-size: 50px;
+  line-height: 75px;
   margin: 0;
+  padding-right: 260px;
 }

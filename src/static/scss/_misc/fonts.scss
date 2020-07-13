@@ -15,3 +15,21 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url('../static/fonts/ubuntu.woff2') format('woff2'),
+      url('../static/fonts/ubuntu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ubuntubold';
+  src: url('../static/fonts/ubuntubold.woff2') format('woff2'),
+      url('../static/fonts/ubuntubold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

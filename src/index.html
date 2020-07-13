@@ -329,87 +329,95 @@
         </ul>
       </div>
     </section>
-    <section class="application ">
-      <h2 class="application __title visually-hidden">Форма для участия</h2>
-      <p class="application __text">Оставьте заявку на участие в конкурсе</p>
+    <section class="application">
+      <h2 class="application__title visually-hidden">Форма для участия</h2>
+      <p class="application__text">Оставьте заявку<br> на участие в конкурсе</p>
       <form class="application__form form">
         <fieldset class="form__fieldset form__contact-details contact-details">
           <legend class="visually-hidden">Контактные данные</legend>
-          <div class="contact-details__col-left">
-            <label for="name" class="">Введите фамилию, имя и отчество</label>
-            <input type="text" id="name" class="contact-details__input" name="name" placeholder="ФИО">
-
-            <label for="dbirth" class="">Введите дату рождения</label>
-            <input type="text" id="dbirth" class="contact-details__input" name="dbirth" placeholder="Дата рождения">
-
-            <label for="city" class="">Введите город проживания</label>
-            <input type="text" id="city" class="contact-details__input" name="city" placeholder="Город">
-
-            <label for="university" class="">Введите вуз, в котором вы обучались</label>
-            <input type="text" id="university" class="contact-details__input" name="university" placeholder="Вуз">
-          </div>
-          <div class="contact-details__col-right">
-            <label for="email" class="">Введите вашу почту для тестового задания</label>
-            <input type="email" id="email" class="contact-details__input" name="email" placeholder="Ваш e-mail для тестовго задания">
-
-            <label for="phone" class="">Введите номер вашего телефона</label>
-            <input type="text" id="phone" class="contact-details__input" name="phone" placeholder="Номер телефона">
-
-            <label for="job" class="">Введите род деятельности</label>
-            <input type="text" id="job" class="contact-details__input" name="job" placeholder="Род деятельности">
-
-            <label for="bachelor" class="">Введите направление бакалавриата, на котором вы обучались</label>
-            <input type="text" id="bachelor" class="contact-details__input" name="bachelor" placeholder="Направление бакалавриата">
+          <div class="contact-details__wrap">
+            <div class="contact-details__col-left">
+              <label for="name" class="visually-hidden">Введите фамилию, имя и отчество</label>
+              <input type="text" id="name" class="contact-details__input" name="name" placeholder="ФИО">
+  
+              <label for="dbirth" class="visually-hidden">Введите дату рождения</label>
+              <input type="text" id="dbirth" class="contact-details__input" name="dbirth" placeholder="Дата рождения">
+  
+              <label for="city" class="visually-hidden">Введите город проживания</label>
+              <input type="text" id="city" class="contact-details__input" name="city" placeholder="Город">
+  
+              <label for="university" class="visually-hidden">Введите вуз, в котором вы обучались</label>
+              <input type="text" id="university" class="contact-details__input" name="university" placeholder="Вуз">
+            </div>
+            <div class="contact-details__col-right">
+              <label for="email" class="visually-hidden">Введите вашу почту для тестового задания</label>
+              <input type="email" id="email" class="contact-details__input" name="email" placeholder="Ваш e-mail для тестовго задания">
+  
+              <label for="phone" class="visually-hidden">Введите номер вашего телефона</label>
+              <input type="text" id="phone" class="contact-details__input" name="phone" placeholder="Номер телефона">
+  
+              <label for="job" class="visually-hidden">Введите род деятельности</label>
+              <input type="text" id="job" class="contact-details__input" name="job" placeholder="Род деятельности">
+  
+              <label for="bachelor" class="visually-hidden">Введите направление бакалавриата, на котором вы обучались</label>
+              <input type="text" id="bachelor" class="contact-details__input" name="bachelor" placeholder="Направление бакалавриата">
+            </div>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__skills skills">
           <legend class="visually-hidden">Уровень подготовки</legend>
-          <div class="form__programming-skills programming-skills">
-            <p class="programming-skills__text">
+          <div class="skills__wrap">
+            <p class="skills__text">
               Как вы оцениваете свои навыки/знания в программировании?
             </p>
-            <label for="programming-skills__beginner" class="programming-skills__label">Начальный</label>
-            <input type="radio" id="programming-skills__beginner" class="programming-skills__input" name="programming-skills" value="beginner">
-  
-            <label for="programming-skills__middle" class="programming-skills__label">Средний</label>
-            <input type="radio" id="programming-skills__middle" class="programming-skills__input" name="programming-skills" value="middle">
-  
-            <label for="programming-skills__advanced" class="programming-skills__label">Продвинутый</label>
-            <input type="radio" id="programming-skills__advanced" class="programming-skills__input" name="programming-skills" value="advanced">
+            <div class="skills__choose choose">
+              <input type="radio" id="programming__beginner" class="choose__input" name="programming" value="beginner" checked>
+              <label for="programming__beginner" class="choose__label">Начальный</label>
+    
+              <input type="radio" id="programming__middle" class="choose__input" name="programming" value="middle">
+              <label for="programming__middle" class="choose__label">Средний</label>
+    
+              <input type="radio" id="programming__advanced" class="choose__input" name="programming" value="advanced">
+              <label for="programming__advanced" class="choose__label">Продвинутый</label>
+            </div>
           </div>
 
-          <div class="form__data-science-skills data-science-skills">
-            <p class="data-science-skills__text">
+          <div class="skills__wrap">
+            <p class="skills__text">
               Как вы оцениваете свои навыки/знания в Data Science?
             </p>
-            <label for="data-science-skills__beginner" class="data-science-skills__label">Начальный</label>
-            <input type="radio" id="data-science-skills__beginner" class="data-science-skills__input" name="data-science-skills" value="beginner">
-  
-            <label for="data-science-skills__middle" class="data-science-skills__label">Средний</label>
-            <input type="radio" id="data-science-skills__middle" class="data-science-skills__input" name="data-science-skills" value="middle">
-  
-            <label for="data-science-skills__advanced" class="data-science-skills__label">Продвинутый</label>
-            <input type="radio" id="data-science-skills__advanced" class="data-science-skills__input" name="data-science-skills" value="advanced">
+            <div class="skills__choose choose">
+              <input type="radio" id="data-science__beginner" class="choose__input" name="data-science" value="beginner" checked>
+              <label for="data-science__beginner" class="choose__label">Начальный</label>
+    
+              <input type="radio" id="data-science__middle" class="choose__input" name="data-science" value="middle">
+              <label for="data-science__middle" class="choose__label">Средний</label>
+    
+              <input type="radio" id="data-science__advanced" class="choose__input" name="data-science" value="advanced">
+              <label for="data-science__advanced" class="choose__label">Продвинутый</label>
+            </div>
           </div>
 
-          <div class="form__math-skills math-skills">
-            <p class="math-skills__text">
+          <div class="skills__wrap">
+            <p class="skills__text">
               Как вы оцениваете свои навыки/знания в высшей математике?
             </p>
-            <label for="math-skills__beginner" class="math-skills__label">Начальный</label>
-            <input type="radio" id="math-skills__beginner" class="math-skills__input" name="math-skills" value="beginner">
-  
-            <label for="math-skills__middle" class="math-skills__label">Средний</label>
-            <input type="radio" id="math-skills__middle" class="math-skills__input" name="math-skills" value="middle">
-  
-            <label for="math-skills__advanced" class="math-skills__label">Продвинутый</label>
-            <input type="radio" id="math-skills__advanced" class="math-skills__input" name="math-skills" value="advanced">
+            <div class="skills__choose choose">
+              <input type="radio" id="math__beginner" class="choose__input" name="math" value="beginner" checked>
+              <label for="math__beginner" class="choose__label">Начальный</label>
+    
+              <input type="radio" id="math__middle" class="choose__input" name="math" value="middle">
+              <label for="math__middle" class="choose__label">Средний</label>
+    
+              <input type="radio" id="math__advanced" class="choose__input" name="math" value="advanced">
+              <label for="math__advanced" class="choose__label">Продвинутый</label>
+            </div>
           </div>
           <div class="form__send send">
-            <label for="form-comment" class="send__label"></label>
-            <textarea name="comment" id="form-comment" cols="30" rows="10" class="send__comment"></textarea>
+            <label for="form-comment" class="send__label visually-hidden">Введите комментарий</label>
+            <textarea name="comment" id="form-comment" cols="30" rows="2" class="send__comment" placeholder="Комментарий"></textarea>
 
-            <p class="send__policy">Нажимая на кнопку «Отправить» вы соглашаетесь с обработкой данных и подписываетесь на рассылку от магистратуры</p>
+            <p class="send__policy">Нажимая кнопку «Отправить», вы соглашаетесь с обработкой данных и подписываетесь на рассылку от магистратуры</p>
 
             <button class="btn form__btn" type="submit">Отправить</button>
           </div>

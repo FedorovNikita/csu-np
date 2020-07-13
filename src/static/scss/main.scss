@@ -61,9 +61,12 @@ a {
 }
 
 .btn {
-  padding: 18px;
+  display: block;
+  padding: 20px;
   background-color: $btn-color-blue;
-  border-radius: 5px;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 // styles
@@ -75,6 +78,8 @@ a {
 @import "calendar";
 @import "career";
 @import "organizers";
+@import "application";
+@import "form";
 
 // & > * {
 //   &:not(:last-child) { margin-right: 10px; }

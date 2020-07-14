@@ -13,7 +13,15 @@
   display: block;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  transition: all linear .3s;
+  &:hover {
+    color: #3e59ff;
+  }
   &--order {
     text-transform: none;
+    &:hover {
+      color: #ffffff;
+    }
   }
 }

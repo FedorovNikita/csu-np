@@ -44,6 +44,8 @@ body {
   font-family: $ubuntu-font;
   background-color: #000000;
   color: #ffffff;
+  background-image: url("../static/img/main-bg.png");
+  background-repeat: no-repeat;
 }
 img {
   max-width: 100%;
@@ -68,6 +70,19 @@ a {
   border-radius: 6px;
   cursor: pointer;
 }
+
+// @media (max-width: 992px) {
+//   .container {
+//     width: 952px
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .container {
+//     width: 708px;
+//     padding: 0 30px;
+//   }
+// }
 
 // styles
 @import "header/header";

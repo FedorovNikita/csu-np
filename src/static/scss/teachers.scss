@@ -4,6 +4,7 @@
 
 .teachers__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -12,7 +13,6 @@
 
 .teachers__item {
   display: flex;
-  width: calc(100% / 3);
   margin-bottom: 90px;
   & > * {
     &:not(:last-child) { margin-right: 33px; }
@@ -21,14 +21,17 @@
 
 .teachers__photo {
   flex-shrink: 0;
+}
+
+.teachers__image {
   width: 118px;
   height: 123px;
-  background-color: #666666;
   border-radius: 10px;
 }
 
 .teachers__wrap {
   padding-right: 35px;
+  width: 249px;
 }
 
 .teachers__name {
@@ -46,3 +49,15 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+// @media (max-width: 992px) {
+//   .teachers__item {
+//     width: 50%;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .teachers__item {
+//     width: 100%;
+//   }
+// }

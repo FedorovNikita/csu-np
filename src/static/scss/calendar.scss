@@ -19,7 +19,7 @@
 
 .calendar__date {
   min-width: 175px;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 46px;
   line-height: 53px;
   color: $text-grey;
@@ -32,4 +32,45 @@
   line-height: 75px;
   margin: 0;
   padding-right: 257px;
+}
+
+@media (max-width: 998px) {
+  .calendar__title {
+    margin-bottom: 40px;
+  }
+
+  .calendar__item {
+    margin-bottom: 80px;
+  }
+
+  .calendar__date {
+    font-size: 37px;
+    line-height: 43px;
+  }
+
+  .calendar__text {
+    padding-right: 100px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar__item {
+    flex-direction: column;
+    margin-bottom: 45px;
+  }
+
+  .calendar__date {
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  .calendar__text {
+    padding-right: 0;
+    font-size: 25px;
+    line-height: 29px;
+  }
 }

@@ -34,6 +34,18 @@
 
 
 @media (max-width: 998px) {
+  .stages {
+    margin-bottom: 55px;
+  }
+
+  .stages__title {
+    margin-top: 0;
+  }
+
+  .stages__list {
+    margin-bottom: 10px;
+  }
+
   .stages__number {
     font-size: 37px;
     line-height: 43px;

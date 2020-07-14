@@ -51,9 +51,8 @@
 }
 
 @media (max-width: 992px) {
-  .teachers__image {
-    width: 77px;
-    height: 77px;
+  .teachers__item {
+    margin-bottom: 67px;
   }
 
   .teachers__name {
@@ -68,6 +67,11 @@
 }
 
 @media (max-width: 768px) {
+  .teachers__image {
+    width: 77px;
+    height: 77px;
+  }
+
   .teachers__name {
     font-size: 16px;
     line-height: 22px;

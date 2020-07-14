@@ -1,3 +1,7 @@
+.career {
+  margin-bottom: 115px;
+}
+
 .career__title {
   margin-bottom: 50px;
 }
@@ -5,5 +9,26 @@
 .career__text {
   font-size: 60px;
   line-height: 75px;
-  margin: 0 0 115px;
+}
+
+@media (max-width: 998px) {
+  .career {
+    margin-bottom: 100px;
+  }
+
+  .career__text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .career {
+    margin-bottom: 80px;
+  }
+
+  .career__text {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }

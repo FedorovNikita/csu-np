@@ -25,14 +25,6 @@
   }
 }
 
-// @media (max-width: 1024px) {
-//   .nav__list {
-//     & > * {
-//       &:not(:last-child) { margin-right: 0px; }
-//     }
-//   }
-// }
-
 @media (max-width: 998px) {
   .nav__list {
     flex-direction: column;

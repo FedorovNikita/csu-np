@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 50px 0;
   list-style: none;
@@ -38,4 +39,41 @@
   padding-right: 90px;
   font-size: 62px;
   line-height: 75px;
+}
+
+@media (max-width: 998px) {
+  .primary__title {
+    font-size: 80px;
+    line-height: 105px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .primary__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .primary__list {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .primary__item {
+    margin-bottom: 50px;
+  }
+
+  .primary__list br {
+    display: none;
+  }
+
+  .title {
+    font-size: 15px;
+    line-height: 17px;
+  }
 }

@@ -11,7 +11,7 @@
 .header__wrap {
   display: flex;
   align-items: center;
-  padding: 20px 0 10px;
+  padding: 20px 20px 10px;
 }
 
 .header__logo {
@@ -25,6 +25,16 @@
 
 .header__nav {
   margin-left: auto;
+}
+
+.header__sandwich {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .header__sandwich {
+    display: block;
+  }
 }
 
 // @media (max-width: 768px) {

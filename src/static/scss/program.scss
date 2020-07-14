@@ -1,5 +1,6 @@
 .program__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 70px 0 0 0;
   padding: 0;
@@ -8,8 +9,7 @@
 
 .program__item {
   position: relative;
-  width: 50%;
-  padding: 0 60px 80px 90px;
+  padding: 0 0 80px 90px;
 }
 
 .program__number {
@@ -31,19 +31,57 @@
 }
 
 .program__text {
+  max-width: 450px;
   margin: 0;
   font-size: 24px;
   line-height: 30px;
 }
 
+@media (max-width: 1148px) {
+  .program__text {
+    max-width: 380px;
+  }
+}
 
-// @media (max-width: 768px) {
-//   .program__list {
-//     flex-direction: column;
-//   }
+@media (max-width: 998px) {
+  .program__text {
+    max-width: 100%;
+  }
 
-//   .program__item {
-//     width: 100%;
-//     padding-right: 0;
-//   }
-// }
+  .program__number {
+    font-size: 33px;
+    line-height: 39px;
+  }
+
+  .program__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .program__text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .program__item {
+    padding-left: 0;
+  }
+
+  .program__number {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .program__title {
+    font-size: 26px;
+    line-height: 30px;
+    padding-left: 50px;
+  }
+
+  .program__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

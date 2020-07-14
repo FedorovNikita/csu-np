@@ -50,14 +50,31 @@
   text-transform: uppercase;
 }
 
-// @media (max-width: 992px) {
-//   .teachers__item {
-//     width: 50%;
-//   }
-// }
+@media (max-width: 992px) {
+  .teachers__image {
+    width: 77px;
+    height: 77px;
+  }
 
-// @media (max-width: 768px) {
-//   .teachers__item {
-//     width: 100%;
-//   }
-// }
+  .teachers__name {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .teachers__about {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .teachers__name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .teachers__about {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

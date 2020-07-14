@@ -5,17 +5,19 @@
 
 .stages__list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 115px;
   & > * {
-    &:not(:last-child) { margin-right: 90px; }
+    &:not(:last-child) { margin-right: 10px; }
   }
 }
 
 .stages__item {
-  width: calc(100% / 3);
+  max-width: 350px;
 }
 
 .stages__number {
@@ -28,4 +30,41 @@
   font-size: 24px;
   line-height: 33px;
   margin: 20px 0 0 0;
+}
+
+
+@media (max-width: 998px) {
+  .stages__number {
+    font-size: 37px;
+    line-height: 43px;
+  }
+  
+  .stages__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stages__list {
+    flex-direction: column;
+  }
+
+  .stages__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .stages__number {
+    margin-right: 30px;
+    font-size: 25px;
+    line-height: 29px;
+  }
+  
+  .stages__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

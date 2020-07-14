@@ -51,9 +51,19 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  .waiting__text {
+    margin-top: 20px;
+    font-size: 45px;
+    line-height: 55px;
+  }
 }
 
 @media (max-width: 768px) {
+  .primary {
+    padding-bottom: 0;
+  }
+
   .primary__title {
     font-size: 35px;
     line-height: 40px;
@@ -61,7 +71,7 @@
 
   .primary__list {
     flex-direction: column;
-    align-content: center;
+    // align-content: center;
   }
 
   .primary__item {
@@ -75,5 +85,13 @@
   .title {
     font-size: 15px;
     line-height: 17px;
+    br {
+      display: none;
+    }
+  }
+
+  .waiting__text {
+    font-size: 30px;
+    line-height: 35px;
   }
 }

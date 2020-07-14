@@ -4,3 +4,13 @@
   line-height: 75px;
   margin-bottom: 110px;
 }
+
+@media (max-width: 998px) {
+
+}
+
+@media (max-width: 768px) {
+  .application__text {
+    margin-bottom: 70px;
+  }
+}

@@ -32,6 +32,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #575757;
+  outline: none;
   &:focus {
     border-color: #3e59ff;
   }
@@ -81,23 +82,33 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 115px;
   padding: 20px 0;
-  border-top: 2px solid #575757;
 }
 
 .send__comment {
-  flex-shrink: 0;
-  width: 550px;
-  margin-right: 100px;
+  display: block;
+  width: 100%;
   font-size: 26px;
   line-height: 31px;
   background-color: transparent;
   border: none;
   color: #ffffff;
+
+  border-bottom: 2px solid #575757;
+}
+
+.send__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .send__policy {
+  width: 300px;
+  margin-left: auto;
   font-size: 15px;
   line-height: 17px;
   margin-top: 0;
@@ -129,11 +140,6 @@
   .skills__text, 
   .skills__choose {
     width: 400px;
-  }
-
-  .send__comment {
-    margin-right: 50px;
-    width: auto;
   }
 }
 
@@ -178,7 +184,6 @@
 
   .send__comment {
     width: 100%;
-    margin-right: 50px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 31px;
@@ -186,7 +191,6 @@
   }
 
   .send__policy {
-    width: 450px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -245,7 +249,6 @@
   }
 
   .form__btn {
-    margin-left: 0;
     font-size: 14px;
     line-height: 16px;
     padding: 15px 20px;

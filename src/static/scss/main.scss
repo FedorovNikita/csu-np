@@ -106,6 +106,16 @@ a {
   }
 }
 
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius:0px;
+}
+
+textarea, input {
+  outline: none;
+}
+
 @media (max-width: 768px) {
   body {
     background-image: url("../static/img/main-bg-mobile.jpg");

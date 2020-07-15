@@ -44,8 +44,9 @@ body {
   font-family: $ubuntu-font;
   background-color: #000000;
   color: #ffffff;
-  background-image: url("../static/img/main-bg.png");
+  background-image: url("../static/img/main-bg.jpg");
   background-repeat: no-repeat;
+  background-position: center 0;
 }
 img {
   max-width: 100%;
@@ -106,6 +107,11 @@ a {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-image: url("../static/img/main-bg-mobile.jpg");
+    background-position: center 30px;
+  }
+
   .container {
     padding: 0 30px;
   }

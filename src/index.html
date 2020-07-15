@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Магистратура</title>
+  <link rel="shortcut icon" href="static/img/favicon.png" type="image/png">
+  <title>Магистратура. ЧелГУ</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header class="header">
       <div class="container header__wrap">
         <div class="header__logo logo">
-          <!-- <img src="" alt="Логотип ЧелГУ" class="logo__scu">
-          <img src="" alt="Логотип Napoleon" class="logo__np"> -->
           <svg class="logo__csu" width="48" height="34">
             <use xlink:href="static/img/svg/symbol/sprite.svg#csu"></use>
           </svg>
-          <svg class="logo__int" width="48" height="34">
-            <use xlink:href="static/img/svg/symbol/sprite.svg#csu"></use>
-          </svg>
+          <img src="static/img/int-small.png" alt="Логотип Интерсвязь" class="logo__int">
           <svg class="logo__np" width="147" height="13">
             <use xlink:href="static/img/svg/symbol/sprite.svg#np"></use>
           </svg>
@@ -392,9 +389,12 @@
             </li>
             <li class="organizers__item">
               <a href="https://www.is74.ru" class="organizers__link">
-                <svg class="organizers__int logo__int" width="212" height="19">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#np"></use>
-                </svg>
+                
+                <picture>
+                  <source media="(max-width: 768px)" srcset="static/img/int-small.png">
+                  
+                  <img src="static/img/int-big.png" alt="Логотип Интерсвязь" class="logo__int">
+              </picture>
               </a>
             </li>
           </ul>
@@ -508,28 +508,14 @@
           <svg class="logo__np" width="147" height="13">
             <use xlink:href="static/img/svg/symbol/sprite.svg#np"></use>
           </svg>
+          <img src="static/img/int-small.png" alt="Логотип Интерсвязь" class="logo__int">
           <svg class="logo__csu" width="48" height="34">
-            <use xlink:href="static/img/svg/symbol/sprite.svg#csu"></use>
-          </svg>
-          <svg class="logo__int" width="48" height="34">
             <use xlink:href="static/img/svg/symbol/sprite.svg#csu"></use>
           </svg>
         </div>
       </div>
     </footer>
   </div>
-  
-  <!-- Для картинок -->
-  <!-- <picture>
-      <source type="image/webp" media="(min-width: 1200px)" srcset="static/img/photo-1-desktop.webp 1x, static/img/photo-1-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)" srcset="static/img/photo-1-tablet.webp 1x, static/img/photo-1-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="static/img/photo-1-mobile.webp 1x, static/img/photo-1-mobile@2x.webp 2x">
-
-      <source media="(min-width: 1200px)" srcset="static/img/photo-1-desktop.jpg 1x, static/img/photo-1-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="static/img/photo-1-tablet.jpg 1x, static/img/photo-1-tablet@2x.jpg 2x">
-      <img class="works-item__image" src="static/img/photo-1-mobile.jpg" srcset="static/img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
-  </picture> -->
-
   <script src="static/js/libs.min.js"></script>
   <script src="static/js/main.js"></script>
 </body>

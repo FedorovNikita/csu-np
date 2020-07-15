@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 
 .footer__logo {
@@ -27,5 +27,16 @@
 
   .footer__contacts {
     display: none;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 100%;
+    & > * {
+      &:not(:last-child) { margin-right: 0px; }
+    }
   }
 }
